@@ -21,3 +21,5 @@ db.products.createIndex({ category: 1 });
 db.products.createIndex({ name: 1 });
 db.products.createIndex({ price: 1 });
 db.products.createIndex({ image: 1 });
+db.deleted_products.remove({});
+db.deleted_products.createIndex({ id: 1 }, { unique: true });
