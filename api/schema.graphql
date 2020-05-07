@@ -10,7 +10,7 @@ type Product{
     id: Int!
     category: category!
 	name: String
-	price: Float
+	price: Int
 	image: String
 
 }
@@ -18,7 +18,7 @@ type Product{
 input ProductInputs {  
     category: category!
 	name: String
-	price: Float
+	price: Int
 	image: String
 }
 
@@ -36,9 +36,8 @@ type Mutation{
 }
 
 input ProductUpdateInputs {
-
   name:String
-  price:Float
+  price:Int
   image:String
   category:category!
 }
