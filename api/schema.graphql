@@ -36,6 +36,7 @@ type Mutation{
 }
 
 input ProductUpdateInputs {
+
   name:String
   price:Float
   image:String
