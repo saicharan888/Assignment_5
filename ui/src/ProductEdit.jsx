@@ -58,6 +58,7 @@ export default class ProductEdit extends React.Component {
     });
     const result = await response.json();
     if (result) {
+      window.console.log(result.data);
       this.setState({ Editproducts: result.data.productUpdate });
       alert('Updated Product successfully'); // eslint-disable-line no-alert
     }
